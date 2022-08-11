@@ -449,7 +449,8 @@ def get_correspondence(source_org: meshlib.Mesh, target_org: meshlib.Mesh, marke
 
 
 if __name__ == "__main__":
-    cfg = ConfigFile.load(ConfigFile.Paths.highpoly.horse_camel)
+    # cfg = ConfigFile.load(ConfigFile.Paths.highpoly.horse_camel)
+    cfg = ConfigFile.load("models\Anna\markers-Anna-mp-mh.yml")
     # Load meshes
     source_org = meshlib.Mesh.load(cfg.source.reference)
     target_org = meshlib.Mesh.load(cfg.target.reference)

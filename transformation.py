@@ -94,8 +94,9 @@ if __name__ == "__main__":
     import render.plot as plt
 
     # cfg = ConfigFile.load(ConfigFile.Paths.highpoly.horse_camel)
-    cfg = ConfigFile.load(ConfigFile.Paths.lowpoly.catdog)
+    # cfg = ConfigFile.load(ConfigFile.Paths.lowpoly.catdog)
     # cfg = ConfigFile.load(ConfigFile.Paths.highpoly.cat_lion)
+    cfg = ConfigFile.load("models\Anna\markers-Anna-mp-mh.yml")
     corr_markers = cfg.markers  # List of vertex-tuples (source, target)
 
     identity = False
@@ -106,7 +107,7 @@ if __name__ == "__main__":
     # Load meshes
 
     original_source = meshlib.Mesh.load(cfg.source.reference)
-    original_pose = meshlib.Mesh.load(cfg.source.poses[0])
+    original_pose = meshlib.Mesh.load(cfg.source.poses[1])
     original_target = meshlib.Mesh.load(cfg.target.reference)
     if identity:
         original_target = meshlib.Mesh.load(cfg.source.reference)

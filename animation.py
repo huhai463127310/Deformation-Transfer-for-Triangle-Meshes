@@ -102,6 +102,7 @@ def animate(transf: Transformation, poses: Sequence[meshlib.Mesh]):
 
 if __name__ == "__main__":
     # cfg = ConfigFile.load(ConfigFile.Paths.highpoly.horse_camel)
-    cfg = ConfigFile.load("models/lowpoly/markers-cat-voxel.yml")
+    # cfg = ConfigFile.load("models/lowpoly/markers-cat-voxel.yml")
+    cfg = ConfigFile.load("models\Anna\markers-Anna-mp-mh.yml")
     # cfg = ConfigFile.load(ConfigFile.Paths.highpoly.cat_lion)
     animate_cfg(cfg)
